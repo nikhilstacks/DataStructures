@@ -23,7 +23,7 @@ public class List {
 		l.head.next = second;
 		
 		LinkedList.Node third = l.new Node(30);
-		second.next = third;
+		l.second.next = third;
 		
 		System.out.println(Integer.toHexString(second.hashCode()) + " "  + l.head.next);
 	}

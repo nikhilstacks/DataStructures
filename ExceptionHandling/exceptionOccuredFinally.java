@@ -1,3 +1,4 @@
+package ExceptionHandling;
 
 public class exceptionOccuredFinally {
     public static void main(String[] args) {

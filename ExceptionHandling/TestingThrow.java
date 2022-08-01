@@ -1,3 +1,4 @@
+package ExceptionHandling;
 
 public class TestingThrow {
     public static void validate(int age) {

@@ -1,3 +1,5 @@
+package DataStructure;
+
 import java.util.*;
 import java.util.Collections;
 import java.text.*;

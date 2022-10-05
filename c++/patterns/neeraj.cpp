@@ -2,7 +2,7 @@
 using namespace std;
 main()
 {
-    cout << "this is for testing";
-    cout << "this is from github vscode";
-    cout << "This the new starting";
+    cout << "this is for testing \n";
+    cout << "this is from github vscode \n";
+    cout << "This the new starting \n";
 }

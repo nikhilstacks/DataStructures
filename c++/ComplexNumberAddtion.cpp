@@ -1,6 +1,8 @@
 #include <iostream>;
 using namespace std;
 
+int counter = 0;
+
 class Complex{
 	private:
 		int a,b;
@@ -8,6 +10,10 @@ class Complex{
 		void setData(int x, int y)
 		{
 			a=x; b=y;	
+		}
+		
+		Complex(Complex c){
+			
 		}
 		
 		void showData(){
@@ -20,6 +26,10 @@ class Complex{
 			temp.b = b + c.b;
 			return temp;
 		}
+		
+		~Complex(){
+			counter++;
+		}
 };
 
 int main()
@@ -29,4 +39,5 @@ int main()
 	c2.setData(2,6);
 	c3 = c1.add(c2);
 	c3.showData();	
+	Counter c4=c3;
 }

@@ -24,11 +24,19 @@ public:
         cout << "value of a: " << a << " value of b: " << b << endl;
     }
 
-    Complex operator++()
+    Complex operator++() // for pre increment
     {
         Complex temp;
         temp.a = ++a;
         temp.b = ++b;
+        return temp;
+    }
+
+    Complex operator++(int) // for post increment pass int argument so that compiler can diffrentiate
+    {
+        Complex temp;
+        temp.a = a++;
+        temp.b = b++;
         return temp;
     }
 
@@ -44,4 +52,7 @@ int main()
     c1.setData(3, 4);
     c2 = ++c1; // or we can write c1.operator++()
     c2.showData();
+    c2 = c1++;
+    c2.showData(); // increased value will not be saved as post increment but increased in caller obj
+    c1.showData();
 }

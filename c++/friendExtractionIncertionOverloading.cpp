@@ -36,7 +36,6 @@ int main()
     operator<<(operator<<(cout, c1), c2); // also can be writeen cout<<c1<<c2
     cout << "this is the value of c1's a: ";
     c1.showData();
-    cout << endl
-         << "This is the value of c2's a: ";
+    cout << "This is the value of c2's a: ";
     c2.showData();
 }

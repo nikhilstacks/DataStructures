@@ -12,7 +12,7 @@ public:
 
     void showData()
     {
-        cout << "this is from show data function value of a is: " << a << endl;
+        cout << a << endl;
     }
 };
 
@@ -34,6 +34,9 @@ int main()
     cout << "Enter the value of a: ";
     operator>>(operator>>(cin, c1), c2);  // also can be written cin>>c1>>c2
     operator<<(operator<<(cout, c1), c2); // also can be writeen cout<<c1<<c2
+    cout << "this is the value of c1's a: ";
     c1.showData();
+    cout << endl
+         << "This is the value of c2's a: ";
     c2.showData();
 }

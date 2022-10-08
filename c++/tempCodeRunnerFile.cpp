@@ -1,4 +1,4 @@
-A()
-    // {
-    //     cout << "i am inside of default constructor of class A " << endl;
-    // }
+void gearShift()
+    {
+        cout << "you just shifted sports car gear :-)" << endl;
+    }

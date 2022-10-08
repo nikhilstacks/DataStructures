@@ -10,6 +10,7 @@ public:
     void setData(int x, int y, int z)
     {
         l = x, b = y, h = z;
+        cout << "value of this " << this;
     }
     void showData()
     {
@@ -21,6 +22,7 @@ int main()
 {
     Box *p, smallBox;
     p = &smallBox;
-    p->setData(10, 12, 5);
-    p->showData();
+    cout << "value of p " << p << endl;
+    smallBox.setData(10, 12, 5);
+    smallBox.showData();
 }

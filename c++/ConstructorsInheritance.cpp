@@ -15,6 +15,11 @@ public:
     {
         a = k;
     }
+
+    void showValue()
+    {
+        cout << "value of a is: " << a << endl;
+    }
 };
 
 class B : public A
@@ -23,13 +28,13 @@ private:
     int b;
 
 public:
-    B(int x, int y)
+    B(int x, int y) : A(x)
     {
         b = y;
     }
     void showData()
     {
-        cout << "value of b is: " << b;
+        cout << "value of b is: " << b << endl;
     }
 };
 
@@ -37,4 +42,5 @@ int main()
 {
     B obj(2, 3);
     obj.showData();
+    obj.showValue();
 }

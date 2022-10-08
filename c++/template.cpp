@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo>
 using namespace std;
 
 template <class X>
